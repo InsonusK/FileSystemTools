@@ -10,6 +10,9 @@
     <Description>Small instrument for file name storage</Description>
     <RepositoryUrl>https://github.com/insonusK/FileName</RepositoryUrl>
     <RepositoryType>File Tool</RepositoryType>
+    <Version>1.0.1</Version>
+    <FileVersion>1.0.0.1</FileVersion>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
   </PropertyGroup>
 
 </Project>
