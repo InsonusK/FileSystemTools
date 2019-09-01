@@ -21,7 +21,7 @@ namespace FileSystem.Tools
             string _path = System.IO.Path.Combine(Path, fileName);
             if (exist && !System.IO.File.Exists(_path))
             {
-                throw new DirectoryNotFoundException("Файл не найден: " + _path);
+                throw new FileNotFoundException("Файл не найден: " + _path);
             }
 
             return _path;
@@ -52,11 +52,6 @@ namespace FileSystem.Tools
         {
             Directory.CreateDirectory(Path);
             return this;
-        }
-
-        public DirectoryManager TryCreate()
-        {
-            return Directory.Exists(Path) ? Create() : this;
         }
     }
 }
