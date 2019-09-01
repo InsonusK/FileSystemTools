@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace File.Name
+namespace FileSystem.Tools
 {
     /// <summary>
     /// Контейнер имени файла

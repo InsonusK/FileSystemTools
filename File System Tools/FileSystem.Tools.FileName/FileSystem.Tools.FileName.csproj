@@ -2,17 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>File.Name</AssemblyName>
-    <RootNamespace>File.Name</RootNamespace>
+    <AssemblyName>FileSystem.Tools.FileName</AssemblyName>
+    <RootNamespace>FileSystem.Tools</RootNamespace>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>insonus.K</Authors>
-    <PackageProjectUrl>https://github.com/insonusK/FileName</PackageProjectUrl>
-    <Description>Small instrument for file name storage</Description>
+    <PackageProjectUrl>https://github.com/insonusK/FileSystemTools</PackageProjectUrl>
+    <Description>Instrument for file name storage</Description>
     <RepositoryUrl>https://github.com/insonusK/FileName</RepositoryUrl>
-    <RepositoryType>File Tool</RepositoryType>
-    <Version>1.0.1</Version>
+    <RepositoryType></RepositoryType>
+    <Version>1.0.0.1</Version>
     <FileVersion>1.0.0.1</FileVersion>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <PackageTags>File Tool FileName</PackageTags>
   </PropertyGroup>
 
 </Project>
