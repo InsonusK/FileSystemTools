@@ -2,8 +2,15 @@
 
 namespace File.Name
 {
+    /// <summary>
+    /// Контейнер имени файла
+    /// </summary>
     public struct FileName:IEquatable<FileName>
     {
+        /// <summary>
+        /// Конструктор
+        /// </summary>
+        /// <param name="fileName">Имя файла</param>
         public FileName(string fileName) : this()
         {
             if (fileName == "") throw new Exception("File Name could not be empty");
@@ -21,6 +28,11 @@ namespace File.Name
                 this.Extension = fileNameArr[fileNameArr.Length - 1];
             }
         }
+        /// <summary>
+        /// Конструктор
+        /// </summary>
+        /// <param name="name">Имя файла</param>
+        /// <param name="extension">Расширение файла</param>
         public FileName(string name, string extension) : this()
         {
             this.Name = name;
@@ -53,7 +65,10 @@ namespace File.Name
             }
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Получить полное имя файла
+        /// </summary>
+        /// <returns></returns>
         public override string ToString() => Extension == null ? Name : $"{Name}.{Extension}";
 
         #endregion
