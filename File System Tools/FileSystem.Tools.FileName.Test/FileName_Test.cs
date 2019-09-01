@@ -1,8 +1,7 @@
 using System.Collections;
-using FileSystem.Tools;
 using NUnit.Framework;
 
-namespace File.Name.Test
+namespace FileSystem.Tools.Test
 {
     public class FileName_Test
     {
@@ -18,29 +17,29 @@ namespace File.Name.Test
         [Test]
         public void Equals_Test()
         {
-            var example = new FileName("abc", "zsc");
+            var _example = new FileName("abc", "zsc");
 
-            Assert.AreEqual(example, new FileName("abc", "zsc"));
-            Assert.AreNotEqual(example, new FileName("abc", "zs"));
-            Assert.AreNotEqual(example, new FileName("abc"));
+            Assert.AreEqual(_example, new FileName("abc", "zsc"));
+            Assert.AreNotEqual(_example, new FileName("abc", "zs"));
+            Assert.AreNotEqual(_example, new FileName("abc"));
 
-            example = new FileName("abc");
-            Assert.AreNotEqual(example, new FileName("abc", "zs"));
-            Assert.AreEqual(example, new FileName("abc"));
+            _example = new FileName("abc");
+            Assert.AreNotEqual(_example, new FileName("abc", "zs"));
+            Assert.AreEqual(_example, new FileName("abc"));
         }
 
         [Test]
         public void GetHashCode_Test()
         {
-            var example = new FileName("abc", "zsc").GetHashCode();
+            var _example = new FileName("abc", "zsc").GetHashCode();
 
-            Assert.AreEqual(example, new FileName("abc", "zsc").GetHashCode());
-            Assert.AreNotEqual(example, new FileName("abc", "zs").GetHashCode());
-            Assert.AreNotEqual(example, new FileName("abc").GetHashCode());
+            Assert.AreEqual(_example, new FileName("abc", "zsc").GetHashCode());
+            Assert.AreNotEqual(_example, new FileName("abc", "zs").GetHashCode());
+            Assert.AreNotEqual(_example, new FileName("abc").GetHashCode());
 
-            example = new FileName("abc").GetHashCode();
-            Assert.AreNotEqual(example, new FileName("abc", "zs").GetHashCode());
-            Assert.AreEqual(example, new FileName("abc").GetHashCode());
+            _example = new FileName("abc").GetHashCode();
+            Assert.AreNotEqual(_example, new FileName("abc", "zs").GetHashCode());
+            Assert.AreEqual(_example, new FileName("abc").GetHashCode());
 
             Assert.AreNotEqual(
                 new FileName("abc.").GetHashCode(), 

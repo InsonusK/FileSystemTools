@@ -17,15 +17,15 @@ namespace FileSystem.Tools
 
             var fileNameArr = fileName.Split(".");
 
-            this.Name = fileNameArr[0];
+            Name = fileNameArr[0];
             for (int i = 1; i < fileNameArr.Length - 1; i++)
             {
-                this.Name = string.Concat(this.Name, ".", fileNameArr[i]);
+                Name = string.Concat(Name, ".", fileNameArr[i]);
             }
 
             if (fileNameArr.Length > 1)
             {
-                this.Extension = fileNameArr[fileNameArr.Length - 1];
+                Extension = fileNameArr[fileNameArr.Length - 1];
             }
         }
         /// <summary>
@@ -35,8 +35,8 @@ namespace FileSystem.Tools
         /// <param name="extension">Расширение файла</param>
         public FileName(string name, string extension) : this()
         {
-            this.Name = name;
-            this.Extension = extension;
+            Name = name;
+            Extension = extension;
         }
 
         public readonly string Name;
