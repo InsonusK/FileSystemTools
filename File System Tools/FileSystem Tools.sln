@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystem.Tools.FileName",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystem.Tools.FileName.Test", "FileSystem.Tools.FileName.Test\FileSystem.Tools.FileName.Test.csproj", "{1EB209E3-AFD1-41DF-9518-6435E87E9AA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem.Tools.DirectoryManager", "FileSystem.Tools.DirectoryManager\FileSystem.Tools.DirectoryManager.csproj", "{4A8872A8-4DF5-4396-9FB6-C165EE220DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem.Tools.DirectoryManager.Test", "FileSystem.Tools.DirectoryManager.Test\FileSystem.Tools.DirectoryManager.Test.csproj", "{433E1174-1022-4D5B-8FA7-ADC8E4131461}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1EB209E3-AFD1-41DF-9518-6435E87E9AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB209E3-AFD1-41DF-9518-6435E87E9AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB209E3-AFD1-41DF-9518-6435E87E9AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8872A8-4DF5-4396-9FB6-C165EE220DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8872A8-4DF5-4396-9FB6-C165EE220DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8872A8-4DF5-4396-9FB6-C165EE220DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8872A8-4DF5-4396-9FB6-C165EE220DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433E1174-1022-4D5B-8FA7-ADC8E4131461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433E1174-1022-4D5B-8FA7-ADC8E4131461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433E1174-1022-4D5B-8FA7-ADC8E4131461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433E1174-1022-4D5B-8FA7-ADC8E4131461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
